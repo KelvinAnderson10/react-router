@@ -26,7 +26,9 @@ export const Page2 = () => {
             {productList.map((product) => {return <Link key={product.id} to={`${product.id}`}>{product.productName}</Link>})}
         </div>
         <div>
-            {params.id ? <div>ID: {product.id} Name: {product.productName} Info: {product.productInfo}</div> : <></>}
+            {/* Tanpa Pakai Index */}
+            {/* {params.id ? <div>ID: {product.id} Name: {product.productName} Info: {product.productInfo}</div> : <>Silahkan Pilih Product</>} */}
+            {params.id ? <div>ID: {product.id} Name: {product.productName} Info: {product.productInfo}</div> : <>Silahkan Pilih Product</>}
         </div>
     </div>
     )
