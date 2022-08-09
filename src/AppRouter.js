@@ -15,7 +15,9 @@ export const AppRouter = () => {
                 <Route path='child1-1' element={<Page1Child1></Page1Child1>}></Route>
                 <Route path='child1-2'element={<Page1Child2></Page1Child2>}></Route>
             </Route>
-            <Route path='page2' element={<Page2></Page2>}></Route>
+            <Route path='page2' element={<Page2></Page2>}>
+                <Route path=':id' element={<Page2></Page2>}></Route>
+            </Route>
         </Route>
         <Route path='*' element={<NoMatch></NoMatch>}></Route>
     </Routes>
